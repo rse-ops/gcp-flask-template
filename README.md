@@ -33,3 +33,24 @@ them for your application, please [let us know](https://github.com/rse-ops/gcp-f
  - **Custom Search** of pages or models (the current search goes to Google search)
  - **Social Authentication** for login with social identities such as Twitter, Google, Globus, etc.
  - **SAML authentication** for more specific institutional access.
+ 
+## Thanks
+
+This theme was originally developed by @vsoch under [stanford-rc](https://github.com/stanford-rc),
+and has been migrated here so she can continue to maintain it!
+
+License
+-------
+
+Copyright (c) 2021, Lawrence Livermore National Security, LLC. 
+Produced at the Lawrence Livermore National Laboratory.
+
+The RADIUSS documentation is licensed under the MIT license [LICENSE](./LICENSE).
+
+Copyrights and patents in the RADIUSS project are retained by
+contributors. No copyright assignment is required to contribute to RADIUSS
+Docker.
+
+This work was produced under the auspices of the U.S. Department of
+Energy by Lawrence Livermore National Laboratory under Contract
+DE-AC52-07NA27344.
