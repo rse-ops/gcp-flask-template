@@ -19,7 +19,7 @@ def load_user(user_id):
 @app.context_processor
 def inject_configvars():
     """inject global configuration variables (title, twitter, etc.) into
-       pages from config.py
+    pages from config.py
     """
     items = {}
     for key in ["TITLE", "TWITTER", "GITHUB_REPOSITORY"]:

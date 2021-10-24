@@ -14,7 +14,7 @@ Base = declarative_base()
 
 def init_db(self):
     """initialize the database, with the default database path or custom with
-       a format corresponding to the database type:
+    a format corresponding to the database type:
     """
     # The user can provide a custom string
     if self.database is None:

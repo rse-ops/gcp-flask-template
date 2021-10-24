@@ -12,7 +12,7 @@ Base = declarative_base()
 
 def init_db(self):
     """initialize the database, with the default database path or custom of
-       the format sqlite:///flaskapp.sqlite
+    the format sqlite:///flaskapp.sqlite
     """
 
     # Database Setup, use default if uri not provided

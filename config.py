@@ -4,7 +4,7 @@ from secrets import token_hex
 # **variables must be in all uppercase, rendered to lowercase in templates**
 
 # The title of your application
-TITLE = "Stanford GCP Flask Application"
+TITLE = "GCP Flask Application"
 
 # Social network aliases, comment out to leave any out
 TWITTER = "vsoch"
@@ -12,7 +12,7 @@ TWITTER = "vsoch"
 # FACEBOOK = "usename"
 
 # Only displays on index navigation page
-GITHUB_REPOSITORY = "https://github.com/stanford-rc/gcp-flask-stanford"
+GITHUB_REPOSITORY = "https://github.com/rse-ops/gcp-flask-template"
 
 # DO NOT EDIT BELOW THIS LINE ##################################################
 

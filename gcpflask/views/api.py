@@ -30,8 +30,7 @@ def abort_if_crayon_doesnt_exist(name):
 
 
 class APIIndex(Resource):
-    """The API index exposes all endpoints for the user
-    """
+    """The API index exposes all endpoints for the user"""
 
     def get(self):
         views = {
@@ -46,7 +45,7 @@ class APIIndex(Resource):
 
 def single_crayon(name):
     """This view serves a single representation of a crayon, and is shared between
-       the crayons list and crayon get functions.
+    the crayons list and crayon get functions.
     """
     crayon = crayons.get(name)
     return {
@@ -59,7 +58,7 @@ def single_crayon(name):
 
 class SingleCrayon(Resource):
     """Get a single crayon. Note that you can add a put/post here to create
-       a new crayon, and the same goes for ListCrayons
+    a new crayon, and the same goes for ListCrayons
     """
 
     def get(self, name):
@@ -69,8 +68,7 @@ class SingleCrayon(Resource):
 
 
 class ListCrayons(Resource):
-    """Return a list of crayons
-    """
+    """Return a list of crayons"""
 
     def get(self):
         return jsonify([single_crayon(name) for name in sorted(crayons.keys())])

@@ -19,8 +19,7 @@ class FlaskServer(Flask):
         self.initdb()
 
     def initdb(self):
-        """initialize the database depending on request from the user.
-        """
+        """initialize the database depending on request from the user."""
         self.database = os.environ.get("FLASKAPP_DATABASE", "sqlite")
         self.logger.info("DATABASE: %s" % self.database)
 

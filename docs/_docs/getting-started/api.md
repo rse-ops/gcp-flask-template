@@ -7,21 +7,21 @@ description: Getting started to create an API
 
 You can create an application programming interface easily, and the gcp-flask-template
 provides an easy example for doing this. For more detailed examples, see the [Flask-Restful](https://flask-restful.readthedocs.io/en/latest/quickstart.html#) API documentation. If you need help
-authenticating your API or adding addition views, please reach out to us at [Research Software Engineering Services](https://stanford-rc.github.io/rse-services/request).
+authenticating your API or adding addition views, please [let us know](https://rse-ops.github.io/gcp-flask-template/issues).
 
 ## Creating your API
 
 You have several ways that you might populate data for an API:
 
 ### Read only, small data
-For data files that are relatively small, it's easy to read in text or data files to store in memory for the application to serve. This is the example that we provide in the [views/api.py](https://github.com/stanford-rc/gcp-flask-stanford/tree/master/gcpflask/views/api.py) by reading in a list of crayons from a csv file, and then
+For data files that are relatively small, it's easy to read in text or data files to store in memory for the application to serve. This is the example that we provide in the [views/api.py](https://github.com/rse-ops/gcp-flask-template/tree/main/gcpflask/views/api.py) by reading in a list of crayons from a csv file, and then
 providing views to list or get a particular crayon by name.
 
 ### Read and Write
 For most applications, you will want to create models that feed into the standard GET, POST, DELETE
 views, possibly use [blueprints](https://flask-restful.readthedocs.io/en/latest/intermediate-usage.html)
 and add [authentication](https://flask-restful.readthedocs.io/en/latest/extending.html?highlight=authentication#resource-method-decorators). There is a nice tutorial [here](https://blog.miguelgrinberg.com/post/designing-a-restful-api-using-flask-restful) for request argument parsing, and please
-don't hesitate to reach out to [Research Software Engineering Services](https://stanford-rc.github.io/rse-services/request) if you want any help. If you are familiar with Swagger or want to make it easy to map models onto
+don't hesitate to [reach out](https://rse-ops.github.io/gcp-flask-template/issues) if you want any help. If you are familiar with Swagger or want to make it easy to map models onto
 API views, we recommend [Flask-Restplus](https://flask-restplus.readthedocs.io/en/stable/swagger.html).
 
 ## Using your API
@@ -29,7 +29,7 @@ API views, we recommend [Flask-Restplus](https://flask-restplus.readthedocs.io/e
 Once your've started your development server:
 
 ```bash
-python main.py
+$ python main.py
 ```
 
 It's fairly easy to use standard curl to interact with your crayons API, and note

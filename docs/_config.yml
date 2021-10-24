@@ -14,22 +14,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: gcp-flask-stanford
-email: vsochat@stanford.edu
-author: Vanessa Sochat
+title: gcp-flask-template
+email: vsoch@noreply.users.github.com
+author: "@vsoch"
 description: > # this means to ignore newlines until "baseurl:"
-  Google Cloud Project + Flask Template for Stanford
+  Google Cloud Project + Flask Template
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/gcp-flask-stanford" # the subpath of your site, e.g. /blog
+baseurl: "/gcp-flask-template" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://stanford-rc.github.io" # the base hostname & protocol for your site
+url: "https://rse-ops.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/stanford-rc/gcp-flask-stanford"
-github_user: "stanford-rc"
-github_repo: "gcp-flask-stanford"
+repo: "https://github.com/rse-ops/gcp-flask-template"
+github_user: "rse-ops"
+github_repo: "gcp-flask-template"
 
 # Optional
 twitter: vsoch
@@ -46,8 +46,9 @@ feedback: true
 # If commented, will use material hat theme
 logo: "assets/img/logo.png"
 logo_pixels: 34
-color: "#bf1010"
-# color: "#8c1515" # primary color for header, buttons
+color: "#005dab"
+logo_text_color: "#005dab"
+logo_highlight_color: "#741755"
 
 # Build settings
 markdown: kramdown

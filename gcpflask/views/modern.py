@@ -12,8 +12,7 @@ from ..forms import LoginForm, RegistrationForm
 from ..database.models import User
 
 
-## Cardinal Template Views -----------------------------------------------------
-# These urls demonstrate the Stanford cardinal theme
+## Modern Template Views -----------------------------------------------------
 
 
 @login_required
@@ -24,8 +23,7 @@ def modern_home():
 
 @app.route("/modern/register", methods=["GET", "POST"])
 def modern_register():
-    """Register a user for your application using the RegistrationForm->forms.py
-    """
+    """Register a user for your application using the RegistrationForm->forms.py"""
     # If the user is already authenticated, redirect to index view
     if current_user.is_authenticated:
         return redirect(url_for("modern_home"))
@@ -46,8 +44,7 @@ def modern_register():
 
 @app.route("/modern/login", methods=["GET", "POST"])
 def modern_login():
-    """Allow a user to login to the cardinal view
-    """
+    """Allow a user to login to the cardinal view"""
     if current_user.is_authenticated:
         return redirect(url_for("index"))
     form = LoginForm()

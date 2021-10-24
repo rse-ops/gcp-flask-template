@@ -7,7 +7,7 @@ description: Templates and Features available
 
 Features include:
 
- - [several branded themes to choose from](#templates)
+ - [several themes to choose from](#templates)
  - a basic user and registration model
  - [a restful API example](api)
  - several database options, sqlite, postgres and mysql
@@ -21,8 +21,7 @@ for using or customizing any of the features above, please don't hesitate to
 # Templates
 
 The gcp flask application provides several templates and examples for you to start work
-for your project! If you need any help, please don't hesitate to [open an issue](https://github.com/stanford-rc/gcp-flask-stanford/issues)
-or reach out to [Research Software Engineering Services](https://stanford-rc.github.io/rse-services/request).
+for your project! If you need any help, please don't hesitate to [open an issue](https://github.com/rse-ops/gcp-flask-template/issues).
 
 ## Modern
 
@@ -33,7 +32,7 @@ you can't do much better than a theme that uses Bootstrap! The modern template h
 
 The home page shows a large image with prominent information like links, announcements, and a spotlight:
 
-![{{ site.baseurl }}/assets/images/modern/home.png]({{ site.baseurl }}/assets/images/modern/home.png)
+![{{ site.baseurl }}/assets/images/modern-home.png]({{ site.baseurl }}/assets/images/modern-home.png)
 
 <br>
 
@@ -42,7 +41,7 @@ The home page shows a large image with prominent information like links, announc
 
 The login page shows what you would expect:
 
-![{{ site.baseurl }}/assets/images/modern/login.png]({{ site.baseurl }}/assets/images/modern/login.png)
+![{{ site.baseurl }}/assets/images/modern-login.png]({{ site.baseurl }}/assets/images/modern-login.png)
 
 <br>
 
@@ -51,7 +50,7 @@ The login page shows what you would expect:
 
 Alon with the registration page.
 
-![{{ site.baseurl }}/assets/images/modern/register.png]({{ site.baseurl }}/assets/images/modern/register.png)
+![{{ site.baseurl }}/assets/images/modern-register.png]({{ site.baseurl }}/assets/images/modern-register.png)
 
 <br>
 
@@ -66,7 +65,7 @@ a plot of data. See the [visualization](#visualization) section for quick tips o
 
 The top of this template can proudly show a title for your page, and quick description:
 
-![{{ site.baseurl }}/assets/images/singlepage/top.png]({{ site.baseurl }}/assets/images/singlepage/top.png)
+![{{ site.baseurl }}/assets/images/singlepage/top.png]({{ site.baseurl }}/assets/images/singlepage-top.png)
 
 <br>
 
@@ -76,7 +75,7 @@ The top of this template can proudly show a title for your page, and quick descr
 The navigation bar is sticky, meaning that it moves with the page. Here we scroll to the collaborators section
 and the navigation bar moves with us.
 
-![{{ site.baseurl }}/assets/images/singlepage/nav.png]({{ site.baseurl }}/assets/images/singlepage/nav.png)
+![{{ site.baseurl }}/assets/images/singlepage-nav.png]({{ site.baseurl }}/assets/images/singlepage-nav.png)
 
 <br>
 
@@ -86,65 +85,9 @@ and the navigation bar moves with us.
 Finally, the main tool shows an interactive chart, courtesy of Chart.js. You could imagine having a tool, form,
 or other analysis write up here.
 
-![{{ site.baseurl }}/assets/images/singlepage/tool.png]({{ site.baseurl }}/assets/images/singlepage/tool.png)
+![{{ site.baseurl }}/assets/images/singlepage-tool.png]({{ site.baseurl }}/assets/images/singlepage-tool.png)
 
 <br>
-
-
-
-## Cardinal Theme
-
-The [Stanford Cardinal Theme](http://web.stanford.edu/group/webdev/cardinal/) provides you with standard views for:
-
-**home**
-
-![{{ site.baseurl }}/assets/images/cardinal/home.png]({{ site.baseurl }}/assets/images/cardinal/home.png)
-
-<br>
-
-**right sidebar**
-
-![{{ site.baseurl }}/assets/images/cardinal/right-sidebar.png]({{ site.baseurl }}/assets/images/cardinal/right-sidebar.png)
-
-<br>
-
-**left sidebar**
-
-![{{ site.baseurl }}/assets/images/cardinal/left-sidebar.png]({{ site.baseurl }}/assets/images/cardinal/left-sidebar.png)
-
-<br>
-
-**no sidebars**
-
-![{{ site.baseurl }}/assets/images/cardinal/no-sidebars.png]({{ site.baseurl }}/assets/images/cardinal/no-sidebars.png)
-
-<br>
-
-**two sidebars**
-
-![{{ site.baseurl }}/assets/images/cardinal/two-sidebars.png]({{ site.baseurl }}/assets/images/cardinal/two-sidebars.png)
-
-<br>
-
-**wide**
-
-![{{ site.baseurl }}/assets/images/cardinal/wide.png]({{ site.baseurl }}/assets/images/cardinal/wide.png)
-
-
-Along with login and registration views.
-
-**login**
-
-![{{ site.baseurl }}/assets/images/cardinal/login.png]({{ site.baseurl }}/assets/images/cardinal/login.png)
-
-<br>
-
-**register**
-
-![{{ site.baseurl }}/assets/images/cardinal/register.png]({{ site.baseurl }}/assets/images/cardinal/register.png)
-
-<br>
-
 
 
 ## Visualization
@@ -157,13 +100,13 @@ For visualization, you can generally take a few approaches:
 
 For point 2, this could either be done with templating, or a more interactive get/post request
 to customize data for the user. If you would like help with any of these approaches, please
-reach out to [Research Software Engineering Services](https://stanford-rc.github.io/rse-services/request).
+[open an issue](https://github.com/rse-ops/gcp-flask-template/issues).
 
 ## Extra Features
 
 The following extra features might be useful to you, and if you would like help to develop
-them for your application, please reach out to [Research Software Engineering Services](https://stanford-rc.github.io/rse-services/).
+them for your application, please [let us know](https://github.com/rse-ops/gcp-flask-template/issues).
 
- - **Custom Search** of pages or models (the current search goes to Stanford search)
+ - **Custom Search** of pages or models (the current search goes to Google search)
  - **Social Authentication** for login with social identities such as Twitter, Google, Globus, etc.
- - **SAML authentication** for more specific Stanford-only access.
+ - **SAML authentication** for more specific institutional access.

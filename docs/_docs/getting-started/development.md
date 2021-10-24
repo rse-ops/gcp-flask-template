@@ -12,7 +12,7 @@ This guide includes setup, configuration, and basic development steps.
 You will want to follow the instructions [here](https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service)
 and:
 
- - create a Google Cloud Project, you can request one at Stanford [here](https://stanford.service-now.com/it_services?id=sc_cat_item&sys_id=fa9f80bddbf05b401df130cf9d96198b)
+ - create a Google Cloud Project. Check to see if your institution can make one on your behalf (with possibly reduced rates)
  - install the gcloud command line client and Python3+
  - authenticate on the command line with `gcloud auth application-default login`
 
@@ -58,17 +58,17 @@ python main.py
 And then you can open up your browser to [http://localhost:8080](http://localhost:8080).
 The main index view is a small portal to direct you to views and features available.
 
-![{{ site.baseurl }}/assets/images/stanford-flask-templates.png]({{ site.baseurl }}/assets/images/stanford-flask-templates.png)
+![{{ site.baseurl }}/assets/images/gcp-flask-template.png]({{ site.baseurl }}/assets/images/gcp-flask-template.png)
 
 ## Testing
 
-A set of example tests are provided in [test_gcpflask.py](https://github.com/stanford-rc/gcp-flask-stanford/blob/master/test_gcpflask.py), and you can read more about testing in flask [here](https://flask.palletsprojects.com/en/1.1.x/testing/). You can run local testing with pytest as follows:
+A set of example tests are provided in [test_gcpflask.py](https://github.com/rse-ops/gcp-flask-template/blob/main/test_gcpflask.py), and you can read more about testing in flask [here](https://flask.palletsprojects.com/en/1.1.x/testing/). You can run local testing with pytest as follows:
 
 ```bash
-pytest -sv test_gcpflask.py
+$ pytest -sv test_gcpflask.py
 ```
 
-{% include alert.html title="Stanford Minimum Security Requirements" type="warning" content="Before deploying any final application, please ensure that it meets the Stanford Minimum Security Requirements: https://uit.stanford.edu/guide/securitystandards#security-standards-applications" %}
+{% include alert.html title="Security" type="warning" content="Before deploying any final application, please have a security audit to ensure you are using best practices." %}
 
 ## Deployment
 
@@ -94,8 +94,8 @@ $ gcloud app deploy
 Initializing App Engine resources...done.                                                                                                
 Services to deploy:
 
-descriptor:      [/home/vanessa/Desktop/Code/gcp-flask-stanford/app.yaml]
-source:          [/home/vanessa/Desktop/Code/gcp-flask-stanford]
+descriptor:      [/home/vanessa/Desktop/Code/gcp-flask-template/app.yaml]
+source:          [/home/vanessa/Desktop/Code/gcp-flask-template]
 target project:  [srcc-dinosaur-dev]
 target service:  [default]
 target version:  [xxxxxxxxxxxxxxxxx]
@@ -150,8 +150,8 @@ Cleaning up also then means:
 
 By default, the database (sqlite) won't work on app engine because it's a read only file
 system. [Google Cloud Managed SQL](https://cloud.google.com/sql) is an option, however it's expensive (typically $55 a month)
-and so you might consider requesting [Stanford Managed SQL](https://uit.stanford.edu/service/sql)
-instead. You would then export the `FLASKAPP_DATABASE` in your local .env file for local testing and
+and so you might consider checking if your institution can host a SQL database for you.
+You would then export the `FLASKAPP_DATABASE` in your local .env file for local testing and
 development (e.g., you would likely want to test/create the database before deployment):
 
 ```bash

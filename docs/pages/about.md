@@ -5,9 +5,9 @@ permalink: /about/
 
 # About
 
-The Google Cloud + Flask + Stanford template here is the first of many templates that want to make it easy
+The Google Cloud + Flask template here is the first of many templates that want to make it easy
 for you to deploy an application to show off your analysis, paper, or even to
-create a programmatic RestFul API for others to use. Brought to you by [Research Software Engineering Services](https://stanford-rc.github.io/rse-services), this is the first of several free-to-use templates that will get you started with a solid base for your development.
+create a programmatic RestFul API for others to use. This is a free-to-use templates that will get you started with a solid base for your development.
 
 ## Support
 
